@@ -1,0 +1,160 @@
+<!DOCHYPE html>
+<html lang = "en">
+    <head>
+     
+        <style>
+        div.a {
+    text-align: center;
+    }
+     h1 {
+          border-bottom-style: solid;
+            }
+          body{
+          text-align: centre;
+          background-color:rgb(255, 255, 255);
+          font-family: georgia;
+                }
+          table, th, td {
+          border:1px solid rgb(1, 1, 0); }
+         
+          .accordion {
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          transition: 0.4s; }
+
+          .active, .accordion:hover {
+            background-color: #ccc;
+          }
+
+          .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+          }
+         
+        </style>
+       
+        <div class="a">
+       
+        <h1 title = "it's just my opinion">Top Instruments</h1>
+       
+</div>
+
+    </head>
+   
+    <div class="a">
+    <body>
+
+
+            <button class="accordion"><h2><ins>Cello</ins></h2></button>
+            <div class="panel">
+            <img src = "https://stringworkshop.co.nz/assets/uploads/products/2_5d435d7089101.jpg" alt = "cello" width="104" height="250">
+            <p>The Cello is the one of best string instrument because of it's tone colour, and the fact that it is included in many ensembles unlike the harp.</p>
+            </div>
+
+            <button class="accordion"><h2><ins>Harp</ins></h2></button>
+            <div class="panel">
+            <img src = "https://images.immediate.co.uk/production/volatile/sites/24/2022/06/ConcertHarp-00bebc4.png?quality=90&resize=980,654" alt = "harp" width="250" height="180">
+            <p>The harp is a very nice sounding instrument and it has lots of strings and pedals.</p>
+            </div>
+
+            <button class="accordion"><h2><ins>Euphonium</ins></h2></button>
+            <div class="panel">
+            <img src = "https://www.brassdirect.co.nz/wp-content/uploads/2015/02/JP374.jpg" alt = "euphonium" width="170" height="200">
+            <p>The Euphonium has great tone colour, and has a very warm sound. Therefore it is on this list.</p>
+            </div>
+
+            <button class="accordion"><h2><ins>Oboe</ins></h2></button>
+            <div class="panel">
+            <img src = "https://sfs.imgix.net/SanFrancisco/media/SanFrancisco/Education%20Instrument%20of%20the%20month/shutterstock_175503086.jpg?w=1600&h=1600&fit=fill&facepad=4&auto=format" alt = "Oboe" width="140" height="205">
+            <p>The Oboe has great tone colour, and has a very warm sound. Therefore it is on this list.</p>            
+            </div>
+
+            <button class="accordion"><h2><ins>Soprano Saxophone</ins></h2></button>
+            <div class="panel">
+            <img src = "https://www.princemusiccompany.com/wp-content/uploads/2017/07/Fugue-F85g-Sorpano.jpg" alt = "Soprano Saxophone" width="170" height="205">
+            <p>The Soprano Saxophone is one of the best jazz instruments because of it's unique tone colour, and robust range.</p>  
+            </div>
+
+            <script>
+              var acc = document.getElementsByClassName("accordion");
+              var i;
+             
+              for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                  } else {
+                    panel.style.display = "block";
+                  }
+                });
+              }
+              </script>
+
+        <h1><ins><mark><a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">Honerable Mentions<a/></mark></ins></h1>
+
+        <table style="width:100%">
+                <tr>
+                  <th>String</th>
+                  <th>Woodwind</th>
+                  <th>Brass</th>
+                  <th>Percussion</th>
+                </tr>
+
+                <tr>
+                  <td>Viola</td>
+                  <td>Bassoon</td>
+                  <td>Soprano Cornet</td>
+                  <td>Timpani</td>
+                </tr>
+
+                <tr>
+                  <td>Double Bass</td>
+                  <td>Clarinet</td>
+                  <td>Tuba</td>
+                  <td>Marimba</td>
+                </tr>
+
+                <tr>
+                  <td>Pipa</td>
+                  <td>Flute</td>
+                  <td>Trombone</td>
+                  <td>Triangle</td>
+                </tr>
+
+                <tr>
+                  <td>Sitar</td>
+                  <td>Recorder</td>
+                  <td>Tenor Horn</td>
+                  <td>Kit</td>
+                </tr>
+
+                <tr>
+                  <td>Erhu</td>
+                  <td>Tenor Saxophpone</td>
+                  <td>Trumpet</td>
+                  <td>Glockenspiel</td>
+                </tr>
+
+                <tr>
+                  <td>Sarangi</td>
+                  <td>Baritone Saxophone</td>
+                  <td>Baritone</td>
+                  <td>Cymbal</td>
+                </tr>
+
+
+              </table>
+
+    </body>
+
+
+
+</html>

@@ -1,160 +1,249 @@
-<!DOCHYPE html>
-<html lang = "en">
-    <head>
-     
-        <style>
-        div.a {
-    text-align: center;
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Top Instruments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  <style>
+    body {font-family: Confortaa;}
+    
+	h1 {
+      border-bottom-style: solid;
     }
-     h1 {
-          border-bottom-style: solid;
-            }
-          body{
-          text-align: centre;
-          background-color:rgb(173, 250, 196);
-          font-family: georgia;
-                }
-          table, th, td {
-          border:1px solid rgb(1, 1, 0); }
-         
-          .accordion {
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          border: none;
-          text-align: left;
-          outline: none;
-          transition: 0.4s; }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    body{
+      text-align: center;
+      background-color:rgb(255, 255, 255);
+      font-family: georgia;
+    }
+    
+    table, th, td {
+      border:1px solid rgb(1, 1, 0); }
 
-          .active, .accordion:hover {
-            background-color: #ccc;
-          }
+    .accordion { 
+      text-align: center;
+      cursor: pointer;
+      padding: 18px;
+      width: 70%;
+      border: none;
+      text-align: left;
+      outline: none;
+      transition: 0.4s; }
 
-          .panel {
-            padding: 0 18px;
-            display: none;
-            background-color: white;
-            overflow: hidden;
-          }
-         
-        </style>
-       
-        <div class="a">
-       
-        <h1 title = "it's just my opinion">Top Instruments</h1>
-       
-</div>
+    .active, .accordion:hover {
+      background-color: #ccc; 
+    }
 
-    </head>
-   
-    <div class="a">
-    <body>
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
 
 
-            <button class="accordion"><h2><ins>Cello</ins></h2></button>
+  </style>
+</head>
+
+  <body>
+
+    <h1 title = "it's just my opinion">Top Instruments</h1>
+	<div class="row">
+    	<div class="col-sm-12">
+            <div class="btn-group w-100">
+                <button type="button" class="btn btn-outline-primary btn-lg" onclick="openCity(event, 'String')">String</button>
+                <button type="button" class="btn btn-outline-primary btn-lg" onclick="openCity(event, 'Woodwind')">Woodwind</button>
+                <button type="button" class="btn btn-outline-primary btn-lg" onclick="openCity(event, 'Brass')">Brass</button>
+                <button type="button" class="btn btn-outline-primary btn-lg" onclick="openCity(event, 'Percussion')">Percussion</button>
+          </div>
+          </div>
+          </div>
+
+    <div id="String" class="tabcontent">
+      <h2>Best String Instruments</h2>
+      <p>String instruments create sound by making strings vibrate. One plays a string instrument by plucking, strumming, or bowing the strings with your fingers or a bowing it with a bow commonly made of horsehair.</p>
+      
+      <button class="accordion"><h2><ins>Cello</ins></h2></button>
             <div class="panel">
             <img src = "https://stringworkshop.co.nz/assets/uploads/products/2_5d435d7089101.jpg" alt = "cello" width="104" height="250">
             <p>The Cello is the one of best string instrument because of it's tone colour, and the fact that it is included in many ensembles unlike the harp.</p>
             </div>
-
-            <button class="accordion"><h2><ins>Harp</ins></h2></button>
+            
+      <button class="accordion"><h2><ins>Harp</ins></h2></button>
             <div class="panel">
             <img src = "https://images.immediate.co.uk/production/volatile/sites/24/2022/06/ConcertHarp-00bebc4.png?quality=90&resize=980,654" alt = "harp" width="250" height="180">
             <p>The harp is a very nice sounding instrument and it has lots of strings and pedals.</p>
             </div>
 
-            <button class="accordion"><h2><ins>Euphonium</ins></h2></button>
+      <button class="accordion"><h2><ins>Viola</ins></h2></button>
             <div class="panel">
-            <img src = "https://www.brassdirect.co.nz/wp-content/uploads/2015/02/JP374.jpg" alt = "euphonium" width="170" height="200">
-            <p>The Euphonium has great tone colour, and has a very warm sound. Therefore it is on this list.</p>
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJwglKdVafMIkqnZzV-QQ89_D1o3LKc3em8g&usqp=CAU" alt = "Violin" width="250" height="180">
+            <p>The viola is a bowed string instrument that is mainly played in alto clef which makes it unique. It has a very nice tone colour at its pitch is between that of a violin and a cello. Because of this, it sounds very similar to them, but it still is, nonetheless, pretty.</p>
             </div>
 
-            <button class="accordion"><h2><ins>Oboe</ins></h2></button>
+      <button class="accordion"><h2><ins>Violin</ins></h2></button>
+            <div class="panel">
+            <img src = "https://media.istockphoto.com/id/182724120/photo/violin-on-white-background.jpg?s=170667a&w=0&k=20&c=n2zBYQ6zU5ZYx-a4W66-16U-jqIUHe89wdoSmgmtYDA=" alt = "Violin" width="250" height="180">
+            <p>The violin is a bowed and plucked string instrument that is mainly play in treble clef. It is included in many ensembled such as chamber music and orchestras. It has a very nice tembre when played well with beautiful vibrato.</p>
+            </div>
+
+      <button class="accordion"><h2><ins>Double Bass</ins></h2></button>
+            <div class="panel">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Aoj_odYp_M4lHOZIdbe_pHu-WF4EIQIEeg&usqp=CAU" alt = "Double Bass" width="250" height="180">
+            <p>The harp is a very nice sounding instrument and it has lots of strings and pedals.</p>
+            </div>
+
+      <button class="accordion"><h2><ins>Pipa</ins></h2></button>
+            <div class="panel">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFKpsghmfmf-ARpzrEGLmHhYZY8cksawuA8g&usqp=CAU" alt = "Pipa" width="250" height="180">
+            <p>The Pipa is like a guitar but yellow. They are super high and have lots of frets. They play moderately fast with a bright and sharp sound. </p>
+            </div>
+
+      <button class="accordion"><h2><ins>Sitar</ins></h2></button>
+            <div class="panel">
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR0jx-KTS7ONrr2615dBTLk9iL-cHmUK__pA&usqp=CAU" alt = "sitar" width="250" height="180">
+            <p>The Sitar is an Indian string instrument which is close to guitar, but has drone strings which are sympathetic reverberators. Makes sound richer and makes it have more depth as it has a very clangy metalic sound.
+</p>
+            </div>
+    </div>
+
+    <div id="Woodwind" class="tabcontent">
+      <h2>Best Woodwind Instruments</h2>
+      <p>Woodwind instruments are instruments that produces sound when you blow air through it. Despite the name, not all woodwind instruments are made entirely of wood; some have metal parts too. What makes them unique is the fact that they all use wooden reeds that vibrat (some even use double reeds!).</p>
+      <button class="accordion"><h2><ins>Oboe</ins></h2></button>
             <div class="panel">
             <img src = "https://sfs.imgix.net/SanFrancisco/media/SanFrancisco/Education%20Instrument%20of%20the%20month/shutterstock_175503086.jpg?w=1600&h=1600&fit=fill&facepad=4&auto=format" alt = "Oboe" width="140" height="205">
             <p>The Oboe has great tone colour, and has a very warm sound. Therefore it is on this list.</p>            
             </div>
 
-            <button class="accordion"><h2><ins>Soprano Saxophone</ins></h2></button>
+      <button class="accordion"><h2><ins>Soprano Saxophone</ins></h2></button>
+      <div class="panel">
+        <img src = "https://www.princemusiccompany.com/wp-content/uploads/2017/07/Fugue-F85g-Sorpano.jpg" alt = "Soprano Saxophone" width="170" height="205">
+        <p>The Soprano Saxophone is one of the best jazz instruments because of it's unique tone colour, and robust range.</p>  
+      </div> 
+
+      <button class="accordion"><h2><ins>Bassoon</ins></h2></button>
+      <div class="panel">
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjxk3A8OiPp-J0i-TXwHCcNHJtrGHgsW4onA&usqp=CAU" alt = "Bassoon" width="170" height="205">
+        <p>The Bassoon is a very interesting instrument as it is double reeded. This gives it an interesting tone colour. 
+ It is one of the best instruments because of its unique tembre.</p>  
+      </div>
+
+      <button class="accordion"><h2><ins>Clarinet</ins></h2></button>
+      <div class="panel">
+        <img src = "https://www.princemusiccompany.com/wp-content/uploads/2017/07/Fugue-F85g-Sorpano.jpg" alt = "Clarinet" width="170" height="205">
+        <p>The Clarinet is a single reeded instrument which, when played well, has a very beautiful tone colour. It is on this list because it has a very big range, is included in many bands, and overall, osunds very nice.</p>  
+      </div>
+
+      <button class="accordion"><h2><ins>Flute</ins></h2></button>
+      <div class="panel">
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRadOzWj8kjmW9QwCAprPD-T168uuG7kU_Z5g&usqp=CAU" alt = "Flute" width="170" height="205">
+        <p>The Flute is a unique instrument because you have to blow into it at the perfect andgle to make a sound. It mostly plays high notes and it requires a lot of practice to be played well, but sounds very nice.</p>  
+      </div>
+
+      <button class="accordion"><h2><ins>Tenor Saxophpone</ins></h2></button>
+      <div class="panel">
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOH7AaoAuCtFfxsk_kdH1r0uWDnO0Qg7DaFA&usqp=CAU" alt = "Tenor Saxophone" width="170" height="205">
+        <p>The Soprano Saxophone is one of the best jazz instruments because of it's unique tone colour, and robust range.</p>  
+      </div>
+
+      <button class="accordion"><h2><ins>Baritone Saxophone</ins></h2></button>
+      <div class="panel">
+        <img src = "https://www.princemusiccompany.com/wp-content/uploads/2017/07/Fugue-F85g-Sorpano.jpg" alt = "Soprano Saxophone" width="170" height="205">
+        <p>The Soprano Saxophone is one of the best jazz instruments because of it's unique tone colour, and robust range.</p>  
+      </div>
+      
+    </div>
+
+    <div id="Brass" class="tabcontent">
+      <h2>Best Brass Instruments</h2>
+      <p>Brass instruments are made of brass (of course) and is played by buzzing your lips into a mouthpiece attached to one end of the instrument. By changing the shape of your lips and using different valves or a slide, you can control the pitch and produce different notes.</p>
+      <button class="accordion"><h2><ins>Euphonium</ins></h2></button>
             <div class="panel">
-            <img src = "https://www.princemusiccompany.com/wp-content/uploads/2017/07/Fugue-F85g-Sorpano.jpg" alt = "Soprano Saxophone" width="170" height="205">
-            <p>The Soprano Saxophone is one of the best jazz instruments because of it's unique tone colour, and robust range.</p>  
+            <img src = "https://www.brassdirect.co.nz/wp-content/uploads/2015/02/JP374.jpg" alt = "euphonium" width="170" height="200">
+            <p>The Euphonium has great tone colour, and has a very warm sound. Therefore it is on this list.</p>
             </div>
+    </div>
 
-            <script>
-              var acc = document.getElementsByClassName("accordion");
-              var i;
-             
-              for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                  this.classList.toggle("active");
-                  var panel = this.nextElementSibling;
-                  if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                  } else {
-                    panel.style.display = "block";
-                  }
-                });
-              }
-              </script>
+    <div id="Percussion" class="tabcontent">
+      <h3>Best Percussion Instruments</h3>
+      <p>A percussion musical instrument is a super diverse and exciting category of instruments that you play by hitting, shaking, or scraping them to create awesome rhythms and sounds. They're like the heartbeat of music, providing a strong and steady pulse that keeps everything grooving.</p>
+    </div>
 
-        <h1><ins><mark><a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">Honerable Mentions<a/></mark></ins></h1>
-
-        <table style="width:100%">
-                <tr>
-                  <th>String</th>
-                  <th>Woodwind</th>
-                  <th>Brass</th>
-                  <th>Percussion</th>
-                </tr>
-
-                <tr>
-                  <td>Viola</td>
-                  <td>Bassoon</td>
-                  <td>Soprano Cornet</td>
-                  <td>Timpani</td>
-                </tr>
-
-                <tr>
-                  <td>Double Bass</td>
-                  <td>Clarinet</td>
-                  <td>Tuba</td>
-                  <td>Marimba</td>
-                </tr>
-
-                <tr>
-                  <td>Pipa</td>
-                  <td>Flute</td>
-                  <td>Trombone</td>
-                  <td>Triangle</td>
-                </tr>
-
-                <tr>
-                  <td>Sitar</td>
-                  <td>Recorder</td>
-                  <td>Tenor Horn</td>
-                  <td>Kit</td>
-                </tr>
-
-                <tr>
-                  <td>Erhu</td>
-                  <td>Tenor Saxophpone</td>
-                  <td>Trumpet</td>
-                  <td>Glockenspiel</td>
-                </tr>
-
-                <tr>
-                  <td>Sarangi</td>
-                  <td>Baritone Saxophone</td>
-                  <td>Baritone</td>
-                  <td>Cymbal</td>
-                </tr>
-
-
-              </table>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
+    
+    <script>
+    	var acc = document.getElementsByClassName("accordion");
+        var i;   
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      </script>
 
     </body>
-
-
-
-</html>
+</html> 
