@@ -1,0 +1,44 @@
+.himg {
+    float: left;
+    width: 65px;
+    background: #555;
+  }
+  
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  body {font-family: Confortaa;}
+  
+    h1 {
+    border-bottom-style: solid;
+    text-align: center;
+    font-family: georgia;
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: georgia;
+  }
+
+  h3 {
+    font-family: georgia;
+  }
+  
+  body{
+    text-align: center;
+    background-color:rgb(255, 255, 255);
+    font-family: georgia;
+  }
+
+ .footer {
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ color: black;
+ text-align: center;
+ border-top-style: solid;
+ }
